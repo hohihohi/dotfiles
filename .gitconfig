@@ -3,3 +3,4 @@
 	email = a56.tazima@gmail.com
 [core]
 	editor = vim
+	fileMode = true
