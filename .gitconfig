@@ -5,3 +5,4 @@
 	editor = vim
 	fileMode = true
 	ignoreCase = false
+	trustctime = true
