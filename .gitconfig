@@ -7,3 +7,4 @@
 	ignoreCase = false
 	trustctime = true
 	checkStat = minimal
+	quotepath = false
