@@ -11,3 +11,4 @@
 	eol = lf
 	autocrlf = input
 	safecrlf = true
+	symlinks = true
