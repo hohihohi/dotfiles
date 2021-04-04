@@ -12,3 +12,4 @@
 	autocrlf = input
 	safecrlf = true
 	symlinks = true
+	ignoreStat = false
