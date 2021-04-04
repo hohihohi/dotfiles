@@ -13,3 +13,4 @@
 	safecrlf = true
 	symlinks = true
 	ignoreStat = false
+	warnAmbiguousRefs = true
