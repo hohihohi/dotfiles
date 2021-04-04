@@ -6,3 +6,4 @@
 	fileMode = true
 	ignoreCase = false
 	trustctime = true
+	checkStat = minimal
