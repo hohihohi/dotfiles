@@ -10,3 +10,4 @@
 	quotepath = false
 	eol = lf
 	autocrlf = input
+	safecrlf = true
