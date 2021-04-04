@@ -8,3 +8,5 @@
 	trustctime = true
 	checkStat = minimal
 	quotepath = false
+	eol = lf
+	autocrlf = input
