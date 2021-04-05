@@ -14,3 +14,4 @@
 	symlinks = true
 	ignoreStat = false
 	warnAmbiguousRefs = true
+	commentChar = auto
