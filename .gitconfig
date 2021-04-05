@@ -16,3 +16,4 @@
 	warnAmbiguousRefs = true
 	commentChar = auto
 	pager = LESSCHARSET=utf-8 less
+	whitespace = cr-at-eol
