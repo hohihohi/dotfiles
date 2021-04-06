@@ -46,3 +46,5 @@
 	new = 030 normal
 	context = 240
 	commit = 246 024
+[commit]
+	status = true
