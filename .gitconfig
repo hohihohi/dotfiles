@@ -20,3 +20,5 @@
 [alias]
 	review = diff origin/main
 	aliases = config --get-regexp alias
+[branch]
+	sort = -authordate
