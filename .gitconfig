@@ -48,3 +48,4 @@
 	commit = 246 024
 [commit]
 	status = true
+	template = $HOME/.commit_template
