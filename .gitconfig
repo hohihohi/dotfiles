@@ -17,3 +17,5 @@
 	commentChar = auto
 	pager = LESSCHARSET=utf-8 less
 	whitespace = cr-at-eol
+[alias]
+	review = diff origin/main
