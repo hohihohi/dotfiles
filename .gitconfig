@@ -24,3 +24,5 @@
 	sort = -authordate
 	autoSetupMerge = always
 	autoSetupRebase = always
+[clone]
+	defaultRemoteName = origin
