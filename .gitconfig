@@ -26,3 +26,15 @@
 	autoSetupRebase = always
 [clone]
 	defaultRemoteName = origin
+[color]
+	advise = true
+	branch = true
+	diff = true
+	grep = true
+	interactive = true
+	push = true
+	remote = true
+	showBranch = true
+	status = true
+	transport = true
+	ui = true
