@@ -22,3 +22,4 @@
 	aliases = config --get-regexp alias
 [branch]
 	sort = -authordate
+	autoSetupMerge = always
