@@ -19,3 +19,4 @@
 	whitespace = cr-at-eol
 [alias]
 	review = diff origin/main
+	aliases = config --get-regexp alias
