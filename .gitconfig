@@ -49,3 +49,5 @@
 [commit]
 	status = true
 	template = $HOME/.commit_template
+[credential]
+	helper = cache --timeout=43200
