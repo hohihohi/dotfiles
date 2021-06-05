@@ -48,6 +48,6 @@
 	commit = 246 024
 [commit]
 	status = true
-	template = $HOME/.commit_template
+	template = ~/.commit_template
 [credential]
 	helper = cache --timeout=43200
