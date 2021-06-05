@@ -76,12 +76,12 @@ set stash-view	= line-number:no,interval=5 id:no date:default author:full commit
 set status-view	= line-number:no,interval=5 status:short file-name
 set tree-view	= line-number:no,interval=5 mode author:full file-size date:default id:no file-name
 
-# Pager based views
-set pager-view	= line-number:no,interval=5 text
-set stage-view	= line-number:no,interval=5 text
-set log-view	= line-number:no,interval=5 text
-set blob-view	= line-number:no,interval=5 text
-set diff-view	= line-number:no,interval=5 text:yes,commit-title-overflow=no
+# Pager based views(default: line-number:no,interval=5 text)
+set pager-view	= line-number:no,interval=3 text
+set stage-view	= line-number:no,interval=3 text
+set log-view	= line-number:no,interval=3 text
+set blob-view	= line-number:no,interval=3 text
+set diff-view	= line-number:no,interval=3 text:yes,commit-title-overflow=no
 
 # UI display settings
 set show-changes		= yes		# Show changes commits in the main view?
