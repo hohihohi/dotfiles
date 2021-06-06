@@ -1,3 +1,4 @@
+# NOTE: fzf setting
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # NOTE: set fpath before compinit
@@ -7,10 +8,12 @@ fpath=( \
 	$fpath \
 	)
 
-### zsh-completion ###
+### autoload ###
+# To activate color
+autoload -Uz colors && colors
+# zsh-completion
 # To activate these completions, add the following to your .zshrc:
-autoload -Uz compinit
-compinit -u
+autoload -Uz compinit && compinit -u
 # You may also need to force rebuild `zcompdump`:
 # rm -f ~/.zcompdump; compinit
 # Additionally, if you receive "zsh compinit: insecure directories" warnings when attempting
