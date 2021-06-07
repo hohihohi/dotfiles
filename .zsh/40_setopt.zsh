@@ -1,8 +1,12 @@
-### UTILITY ###
+### AUTOMATION ###
 # Show completion suggestions in tabs
 setopt auto_menu
 # When cd is executed, it is pushed to the directory stack
 setopt auto_pushd
+# When there are multiple candidates for completion, list them
+setopt auto_list
+
+### UTILITY ###
 # Emit "maybe" when the command name you are typing is wrong
 setopt correct
 
