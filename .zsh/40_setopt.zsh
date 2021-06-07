@@ -28,7 +28,7 @@ setopt print_eight_bit
 
 ### PROMPT ###
 # make variable references in PROMPT variables expandable
-setopt PROMPT_SUBST
+setopt prompt_subst
 
 ### HISTORY ###
 # Do not add the same command to the history as the previous one
