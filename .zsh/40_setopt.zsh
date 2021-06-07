@@ -7,7 +7,8 @@ setopt auto_pushd
 setopt auto_list
 # Automatically completes parenthesis correspondence, etc
 setopt auto_param_keys
-
+# Automatically append / to the end of directory name completion
+setopt auto_param_slash
 
 ### UTILITY ###
 # Emit "maybe" when the command name you are typing is wrong
