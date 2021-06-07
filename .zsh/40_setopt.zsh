@@ -22,9 +22,11 @@ setopt interactive_comments
 # Notify me when a background job is finished
 setopt notify
 
-### LANGUAGE ###
+### DISPLAY ###
 # enable to print 8bit which contains Japanese characters
 setopt print_eight_bit
+# Show file type as a candidate (ls -F)
+setopt list_types
 
 ### PROMPT ###
 # make variable references in PROMPT variables expandable
