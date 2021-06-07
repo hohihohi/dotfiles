@@ -6,14 +6,14 @@ export PATH="$HOME/bin:$PATH"
 
 ### LANGUAGE ###
 # please confirm 'locale' command
-LANG="en_US.UTF-8"
-LC_COLLATE="${LANGUAGE}"
-LC_CTYPE="${LANGUAGE}"
-LC_MESSAGES="${LANGUAGE}"
-LC_MONETARY="${LANGUAGE}"
-LC_NUMERIC="${LANGUAGE}"
-LC_TIME="${LANGUAGE}"
-LC_ALL="${LANGUAGE}"
+export LANG="en_US.UTF-8"
+export LC_COLLATE="${LANGUAGE}"
+export LC_CTYPE="${LANGUAGE}"
+export LC_MESSAGES="${LANGUAGE}"
+export LC_MONETARY="${LANGUAGE}"
+export LC_NUMERIC="${LANGUAGE}"
+export LC_TIME="${LANGUAGE}"
+export LC_ALL="${LANGUAGE}"
 
 ### HISTORY ###
 # history file path
