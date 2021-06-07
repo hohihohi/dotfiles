@@ -15,6 +15,9 @@ setopt auto_param_slash
 setopt correct
 # Check spell all
 setopt correct_all
+# `=command` equals `which command`
+setopt equals
+
 
 ### LANGUAGE ###
 # enable to print 8bit which contains Japanese characters
