@@ -5,6 +5,9 @@ setopt auto_menu
 setopt auto_pushd
 # When there are multiple candidates for completion, list them
 setopt auto_list
+# Automatically completes parenthesis correspondence, etc
+setopt auto_param_keys
+
 
 ### UTILITY ###
 # Emit "maybe" when the command name you are typing is wrong
