@@ -51,3 +51,5 @@
 	template = ~/.commit_template
 [credential]
 	helper = osxkeychain
+[ghq]
+	root = ~/Work/src
