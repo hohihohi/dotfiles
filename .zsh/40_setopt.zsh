@@ -17,7 +17,8 @@ setopt correct
 setopt correct_all
 # `=command` equals `which command`
 setopt equals
-
+# Consider # and after as comments even on the command line
+setopt interactive_comments
 
 ### LANGUAGE ###
 # enable to print 8bit which contains Japanese characters
