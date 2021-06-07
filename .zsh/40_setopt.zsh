@@ -21,6 +21,8 @@ setopt equals
 setopt interactive_comments
 # Notify me when a background job is finished
 setopt notify
+# Also complete after = in arguments (e.g. --prefix=/usr)
+setopt magic_equal_subst
 
 ### DISPLAY ###
 # enable to print 8bit which contains Japanese characters
