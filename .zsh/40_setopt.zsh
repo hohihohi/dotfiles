@@ -19,6 +19,8 @@ setopt correct_all
 setopt equals
 # Consider # and after as comments even on the command line
 setopt interactive_comments
+# Notify me when a background job is finished
+setopt notify
 
 ### LANGUAGE ###
 # enable to print 8bit which contains Japanese characters
