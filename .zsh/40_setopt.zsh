@@ -27,6 +27,8 @@ setopt notify
 setopt print_eight_bit
 # Show file type as a candidate (ls -F)
 setopt list_types
+# Pack the completion results as much as possible
+setopt list_packed
 
 ### PROMPT ###
 # make variable references in PROMPT variables expandable
