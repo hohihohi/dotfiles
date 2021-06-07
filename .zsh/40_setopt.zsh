@@ -13,6 +13,8 @@ setopt auto_param_slash
 ### UTILITY ###
 # Emit "maybe" when the command name you are typing is wrong
 setopt correct
+# Check spell all
+setopt correct_all
 
 ### LANGUAGE ###
 # enable to print 8bit which contains Japanese characters
