@@ -1,3 +1,8 @@
+### UTILITY ###
+setopt auto_pushd
+# Emit "maybe" when the command name you are typing is wrong
+setopt correct
+
 ### LANGUAGE ###
 # enable to print 8bit which contains Japanese characters
 setopt print_eight_bit
@@ -31,3 +36,11 @@ setopt hist_no_functions
 setopt extended_history
 # Append to history file
 setopt append_history
+
+### No Beep ###
+# No beeping
+setopt no_beep
+# No list beeping
+setopt no_list_beep
+# No history beeping
+setopt no_hist_beep
