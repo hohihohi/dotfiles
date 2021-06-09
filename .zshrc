@@ -9,6 +9,7 @@ fpath=( \
 	)
 
 ### autoload ###
+autoload bashcompinit && bashcompinit
 # To activate color
 autoload -Uz colors && colors
 # zsh-completion
@@ -19,6 +20,7 @@ autoload -Uz compinit && compinit -u
 # Additionally, if you receive "zsh compinit: insecure directories" warnings when attempting
 # to load these completions, you may need to run this:
 # chmod -R go-w '/usr/local/share/zsh'
+complete -C '/usr/local/bin/aws_completer' aws
 
 ### load zsh files ###
 ZSHHOME="${PWD}/.zsh"
