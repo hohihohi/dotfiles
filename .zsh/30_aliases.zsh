@@ -1,3 +1,3 @@
 ### CORE ###
 alias ..='cd ..'
-alias ll='ls -lAF' # Show hidden all files
+alias ll='exa -la' # Show hidden all files
