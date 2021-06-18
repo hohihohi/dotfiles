@@ -23,7 +23,7 @@ autoload -Uz compinit && compinit -u
 complete -C '/usr/local/bin/aws_completer' aws
 
 ### load zsh files ###
-ZSHHOME="${PWD}/.zsh"
+ZSHHOME="${HOME}/.zsh"
 if [ -d $ZSHHOME -a -r $ZSHHOME -a \
 	-x $ZSHHOME ]; then
 	for i in $ZSHHOME/*; do
