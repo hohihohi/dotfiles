@@ -53,3 +53,5 @@
 	helper = osxkeychain
 [ghq]
 	root = ~/Work/src
+[init]
+	defaultBranch = main
