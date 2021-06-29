@@ -18,5 +18,5 @@ precmd () {
 
 # please see https://qiita.com/yamagen0915/items/77fb78d9c73369c784da
 # https://qiita.com/kumatira/items/41562f1d9001927e9888
-export PROMPT="%K{magenta}%B%F{white}@%n%k%f%b %B%F{green}❯❯%b%f %K{green}%B%F{white}%1(v|%1v|) %k%f%b %K{cyan}%B%F{white}%~%k%f%b
+export PROMPT="%K{magenta}%B%F{white}@%n%k%f%b %B%F{green}❯❯%b%f %K{green}%B%F{white}%1(v|%1v|) %k%f%b%K{cyan}%B%F{white} %~ %k%f%b
 %B%F{green}❯%f%b $ "
