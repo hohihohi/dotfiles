@@ -8,3 +8,6 @@ alias pokemon='(){cat ~/.art/pokemon/$1.txt}'
 
 ### AWS ###
 alias profile='(){export AWS_PROFILE=$1;}'
+
+### MAC ###
+alias fopen='open ./' # Open current directory by finder
