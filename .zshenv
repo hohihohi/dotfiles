@@ -22,3 +22,6 @@ export HISTFILE=~/.zsh_history
 export HISTSIZE=1000
 # history size on file
 export SAVEHIST=100000
+
+### GOLANG ###
+export GOBIN="${GOPATH}/bin"
