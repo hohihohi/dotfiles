@@ -3,6 +3,7 @@
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # add binaries on home directory
 export PATH="$HOME/bin:$PATH"
+export XDG_CONFIG_HOME=~/.config
 
 ### LANGUAGE ###
 # please confirm 'locale' command
@@ -24,4 +25,10 @@ export HISTSIZE=1000
 export SAVEHIST=100000
 
 ### GOLANG ###
-export GOBIN="${GOPATH}/bin"
+export GOBIN="$(go env GOPATH)/bin"
+# add go binaries
+export PATH="$GOBIN:$PATH"
+
+### PYTHON ###
+# add python binaries
+export PATH="$HOME/Library/Python/3.9/bin:$PATH"
