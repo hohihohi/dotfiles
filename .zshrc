@@ -43,7 +43,11 @@ complete -o nospace -C /usr/local/Cellar/tfenv/2.2.2/versions/1.0.0/terraform te
 ### language version management ###
 # gvm
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# poetry
+poetry completions zsh > ~/.zsh/plugins/downloads/_poetry
