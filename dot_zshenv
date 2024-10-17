@@ -3,6 +3,8 @@
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # add binaries on home directory
 export PATH="$HOME/bin:$PATH"
+# add brew application's binary path
+export PATH="/opt/homebrew/bin:$PATH"
 
 ### XDG Base Directory Spec ###
 # ref: https://specifications.freedesktop.org/basedir-spec/latest/
