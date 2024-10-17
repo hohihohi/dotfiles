@@ -16,3 +16,11 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
 # XDG state file
 export XDG_DATA_HOME="$HOME/.local/state"
+
+### HISTORY ###
+# history file path
+export HISTFILE=~/.zsh_history
+# history size on memory
+export HISTSIZE=1000
+# history size on file
+export SAVEHIST=100000
