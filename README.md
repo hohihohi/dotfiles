@@ -39,7 +39,7 @@ brew doctor
 3. Update .Brewfile by dump
 
 ```
-brew bundle dump --global
+brew bundle dump --global --force
 ```
 
 4. Execute "Modify the dotfile has been managed by chezmoi"
