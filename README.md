@@ -65,4 +65,9 @@ chezmoi diff
 chezmoi add $HOME/$FILE
 ```
 
-4.
+4. Update dotfiles local repository
+  - `git status`
+  - `git add`
+  - `git commit`
+5. Update dotfiles remote repository
+  - `git push origin -u main`
