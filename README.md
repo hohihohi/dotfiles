@@ -49,17 +49,20 @@ brew bundle dump --global --force
 
 1. Edit the dotfile on home directory
 2. Confirm difference between working copy and the dotfile on home directory
+  - Default working copy directory: `~/.local/share/chezmoi`
 
 
 ```
+chezmoi status
 chezmoi diff
 ```
 
-3. Update the working directory to match the target state (home directory)
+3. Update working copy by home directory
+  - If you would like to roll back home directory by working copy, execute `chezmoi apply -v`
 
 
 ```
-chezmoi apply -v
+chezmoi add $HOME/$FILE
 ```
 
 4.
