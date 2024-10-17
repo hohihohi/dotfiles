@@ -1,1 +1,3 @@
+### Language management ###
+# activate mise: https://mise.jdx.dev/getting-started.html
 eval "$(/opt/homebrew/bin/mise activate zsh)"
