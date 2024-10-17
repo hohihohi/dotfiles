@@ -4,7 +4,7 @@ This dotfile only supports Mac now.
 
 ## Pre-requirement
 
-1. Install [Homebrew]
+1. Install [Homebrew](https://brew.sh/ja/)
 1. Install [chezmoi](https://www.chezmoi.io/install/)
 
 ## Installation
