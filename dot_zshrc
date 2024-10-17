@@ -1,3 +1,21 @@
 ### Language management ###
 # activate mise: https://mise.jdx.dev/getting-started.html
 eval "$(/opt/homebrew/bin/mise activate zsh)"
+
+# node
+# install node from mise if node hasn't installed yet
+if ! which node; then
+    mise use --global node
+fi
+
+# python
+# install python from mise if node hasn't installed yet
+if ! which python; then
+    mise use --global python
+fi
+
+# go
+# install go from mise if node hasn't installed yet
+if ! which go; then
+    mise use --global go
+fi
