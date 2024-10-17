@@ -3,3 +3,14 @@
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # add binaries on home directory
 export PATH="$HOME/bin:$PATH"
+
+### XDG Base Directory Spec ###
+# ref: https://specifications.freedesktop.org/basedir-spec/latest/
+# XDG config file
+export XDG_CONFIG_HOME="$HOME/.config"
+# XDG cache file
+export XDG_CACHE_HOME="$HOME/.cache"
+# XDG data file
+export XDG_DATA_HOME="$HOME/.local/share"
+# XDG state file
+export XDG_DATA_HOME="$HOME/.local/state"
