@@ -1,0 +1,5 @@
+### PATH ###
+# default path
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+# add binaries on home directory
+export PATH="$HOME/bin:$PATH"
