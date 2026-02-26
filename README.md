@@ -2,10 +2,10 @@
 
 This dotfile only supports Mac now.
 
-## Pre-requirement
+## Pre-requirement(manualy)
 
 1. Install [Homebrew](https://brew.sh/ja/)
-2. Install [chezmoi](https://www.chezmoi.io/install/)
+1. Install [chezmoi](https://www.chezmoi.io/)
 
 ## Installation
 
@@ -15,6 +15,25 @@ This dotfile only supports Mac now.
 ```
 chezmoi init https://github.com/$GITHUB_USERNAME/dotfiles.git
 ```
+3. Confirm chezmoi source path
+```
+chezmoi init https://github.com/hohihohi/dotfiles.git
+Cloning into '/Users/hideaki_shiraishi/.local/state/chezmoi'...
+remote: Enumerating objects: 49, done.
+remote: Counting objects: 100% (49/49), done.
+remote: Compressing objects: 100% (38/38), done.
+Receiving objects: 100% (49/49), 6.34 KiB | 6.34 MiB/s, done.
+Resolving deltas: 100% (18/18), done.
+remote: Total 49 (delta 18), reused 38 (delta 7), pack-reused 0 (from 0)
+
+
+chezmoi source-path
+```
+4. Apply dotfiles
+```
+chezmoi apply
+```
+
 
 ## How to manage dotfiles
 
