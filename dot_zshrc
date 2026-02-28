@@ -1,21 +1,27 @@
 ### Language management ###
-# activate mise: https://mise.jdx.dev/getting-started.html
-eval "$(/opt/homebrew/bin/mise activate zsh)"
-
-# node
-# install node from mise if node hasn't installed yet
-if ! which node; then
-    mise use --global node
-fi
-
-# python
-# install python from mise if node hasn't installed yet
-if ! which python; then
-    mise use --global python
-fi
-
-# go
-# install go from mise if node hasn't installed yet
-if ! which go; then
-    mise use --global go
+# Automatic Activation: With mise activate,
+# mise hooks into your shell prompt and automatically updates your environment
+# when you change directories
+if type mise > /dev/null 2>&1; then
+    # If mise exists
+    # updates your environment variable and PATH every time
+    # your prompt is run to ensure you use the correct versions
+    eval "$(/opt/homebrew/bin/mise activate zsh)" # In your ~/.zshrc
+    # NodeJS
+    # -- Use node from mise as global
+    if ! which node; then
+        mise use --global node
+    fi
+    # Python
+    # install python from mise if node hasn't installed yet
+    if ! which python; then
+        mise use --global python
+    fi
+    # go
+    # install go from mise if node hasn't installed yet
+    if ! which go; then
+        mise use --global go
+    fi
+else
+    echo "NOT found mise command. please install mise"
 fi
