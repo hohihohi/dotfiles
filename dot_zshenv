@@ -17,6 +17,12 @@ export XDG_DATA_HOME="$HOME/.local/share"
 # XDG state file
 export XDG_DATA_HOME="$HOME/.local/state"
 
+### EDITOR ###
+# default editor
+export EDITOR="vim"
+# rich editor
+#export VISUAL="zed --wait"
+
 ### HISTORY ###
 # history file path
 export HISTFILE=~/.zsh_history
