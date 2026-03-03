@@ -39,6 +39,7 @@ brew "tree"
 brew "typos-cli"
 brew "unixodbc"
 brew "unzip"
+brew "vim"
 brew "yq"
 cask "alfred"
 cask "appcleaner"
@@ -63,3 +64,5 @@ mas "Keynote", id: 409183694
 mas "Kindle", id: 302584613
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+go "cmd/go"
+go "cmd/gofmt"
