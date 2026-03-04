@@ -10,17 +10,17 @@ if type mise > /dev/null 2>&1; then
     # NodeJS
     # -- Use node from mise as global
     if ! which node; then
-        mise use --global node
+        mise use --global node@latest
     fi
     # Python
     # install python from mise if node hasn't installed yet
     if ! which python; then
-        mise use --global python
+        mise use --global python@latest
     fi
     # go
     # install go from mise if node hasn't installed yet
     if ! which go; then
-        mise use --global go
+        mise use --global go@latest
     fi
 else
     echo "NOT found mise command. please install mise"
