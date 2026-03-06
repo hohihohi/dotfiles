@@ -4,99 +4,52 @@ This dotfile only supports Mac now.
 
 ## Pre-requirement(manualy)
 
-1. Install [Homebrew](https://brew.sh/ja/)
-1. Install [chezmoi](https://www.chezmoi.io/)
+1. Install [Homebrew](https://brew.sh/ja/): `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+1. Install [git](https://brew.sh/ja/): `brew install git`
+1. Install [chezmoi](https://www.chezmoi.io/): `brew install chezmoi`
 
 ## Installation
 
-1. Confirm this repository URL
-2. Initialize chezmoi with this repository
-
-```
-chezmoi init https://github.com/$GITHUB_USERNAME/dotfiles.git
-```
-3. Confirm chezmoi source path
-```
-chezmoi init https://github.com/hohihohi/dotfiles.git
-Cloning into '/Users/hideaki_shiraishi/.local/state/chezmoi'...
-remote: Enumerating objects: 49, done.
-remote: Counting objects: 100% (49/49), done.
-remote: Compressing objects: 100% (38/38), done.
-Receiving objects: 100% (49/49), 6.34 KiB | 6.34 MiB/s, done.
-Resolving deltas: 100% (18/18), done.
-remote: Total 49 (delta 18), reused 38 (delta 7), pack-reused 0 (from 0)
-
-
-chezmoi source-path
-```
-4. Apply dotfiles
-```
-chezmoi apply
-```
-
+1. Confirm this repository path from github
+1. Initialize chezmoi with this repository: `chezmoi init https://github.com/$GITHUB_USERNAME/dotfiles.git`
+  - By default, chezmoi will guess the full git repo URL, using HTTPS.
+  - [If you would like to initialize with SSH, please use SSH flag](https://www.chezmoi.io/reference/commands/init/)
+1. Check what changes that chezmoi will make to your home directory by running: `chezmoi diff`
+1. Apply changes: `chezmoi apply -v`
+1. Install the packages listed in ~/.Brewfile: `brew bundle --global`
 
 ## How to manage dotfiles
 
 ### Add new dotfile to manage
 
-1. Create home dotfile manually
-2. Enable to manage new dotfile on chezmoi
+1. Create dotfile on home directory manually
+1. Manage your dotfile with chezmoi: `chezmoi add $HOME/$FILE`
+1. Confirm difference between chezmoi working directories and home directory
+  - `chezmoi status`
+  - `chezmoi diff`
+1. Move git directory which is managed by chezmoi: `chezmoi cd`
+1. Update dotfiles local repository
+  - `git status`
+  - `git add`
+  - `git commit`
+1. Update dotfiles remote repository
+  - `git push origin -u main`
 
-```
-chezmoi add $HOME/$FILE
-```
+### Update Brewfile
 
+1. Add or delete or update the application by homebrew manually
+1. Check your system for potential problems which are managed by homebrew before export:  `brew doctor`
+1. Update local .Brewfile by dump: `brew bundle dump --global --force`
+1. Update dot_Brewfile which is managed by chezmoi: `brew re-add $HOME/.Brewfile`
+  - It is same: Copy from home directories .Brewfile to chezmoi working directories
+  - `cp $HOME/.Brewfile $HOME/.local/share/chezmoi/dot_Brewfile`
+1. Confirm difference between chezmoi working directories and home directory
+  - `chezmoi status`
+  - `chezmoi diff`
+1. Move git directory which is managed by chezmoi: `chezmoi cd`
 3. Update dotfiles local repository
   - `git status`
   - `git add`
   - `git commit`
 4. Update dotfiles remote repository
-  - `git push origin -u main`
-
-### Install the applications which are managed by homebrew
-
-The following command will install the packages listed in ~/.Brewfile.
-
-
-```
-brew bundle --global
-```
-
-### Add/Delete applications by homebrew
-1. Add or delete application by homebrew manually
-2. Check your system for potential problems which are managed by homebrew
-
-```
-brew doctor
-```
-
-3. Update .Brewfile by dump
-
-```
-brew bundle dump --global --force
-```
-
-4. Copy from home directories .Brewfile to working copy
-  - `cp $HOME/.Brewfile $HOME/.local/share/chezmoi/dot_Brewfile`
-5. Execute "Modify the dotfile has been managed by chezmoi"
-
-
-### Modify the dotfile has been managed by chezmoi
-
-1. Edit working copy dotfile
-  - Default working copy directory: `~/.local/share/chezmoi`
-2. Confirm difference between working copy and the dotfile on home directory
-
-```
-chezmoi status
-chezmoi diff
-```
-
-3. Update home directory dotfile from working copy
-  - `chezmoi apply -v`
-4. Update dotfiles local repository
-  - `git status`
-  - `git add`
-  - `git commit`
-5. Update dotfiles remote repository
   - `git push origin -u main`
