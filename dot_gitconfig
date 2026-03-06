@@ -1,0 +1,67 @@
+# This is Git's per-user configuration file.
+[user]
+# Default user
+	name = hidemaru
+	email = hideaki_shiraishi@mail.toyota.co.jp
+# Please adapt and uncomment the following lines:
+#	name = hohihohi
+#	email = a56.tazima@gmail.com
+[credential]
+# Please read https://git-scm.com/doc/credential-helpers
+# I manage credentials using gopass, but Git credentials on macOS only.
+	helper = osxkeychain
+[core]
+# Define eol(end of line) code
+	eol = lf
+# Replacing line break when git check out and commit
+	autocrlf = input
+# Setting to replace when line break codes are mixed
+	safecrlf = true
+# Avoid case sensitivity in file names
+	ignorecase = false
+# Default editor
+	editor = vim
+# Settings for the pager which is called when git diff and git status
+# default setting is less but specified as utf-8 less to prevent Japanese character corruption
+	pager = LESSCHARSET=utf-8 less
+[init]
+# Set default branch instead of master
+	defaultBranch = main
+[branch]
+# Sort branchs when git branch: Sort by the time the branchs were created
+	sort = -authordate
+[clone]
+# Set default remote name if user doesn't specify
+	defaultRemoteName = origin
+[color]
+# Default setting: use of color per command family
+	ui = auto
+[fetch]
+# Apply git fetch -p automaticaly: prune branchs
+	prune = true
+# Apply git fetch -P automaticaly: prune tags
+	pruneTags = true
+[push]
+# Apply git push --follow-tags automaticaly: push commits with tags
+	followTags = true
+[pull]
+# Do not perform rebase to tidy up commit logs during pull
+	rebase = false
+# Avoid unintended merges
+	ff = only
+[merge]
+# Display conflict more readable
+	conflictStyle = zdiff3
+[commit]
+# If use commit template
+	template = ~/.commit_template
+[grep]
+# Display line number when git grep
+	lineNumber = true
+[rerere]
+# Automates the resolution of repetitive merge conflicts by remembering how you solved a conflict previously
+	enabled = true
+[ghq]
+# ghq.root can be configured with multiple paths.
+# When ghq.root is set multiple path, the last path is the primary path.
+	root = ~/ghq
