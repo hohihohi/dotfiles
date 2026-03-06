@@ -20,7 +20,7 @@
 # Avoid case sensitivity in file names
 	ignorecase = false
 # Default editor
-	editor = vim
+	editor = nvim
 # Settings for the pager which is called when git diff and git status
 # default setting is less but specified as utf-8 less to prevent Japanese character corruption
 	pager = LESSCHARSET=utf-8 less
