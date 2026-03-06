@@ -15,17 +15,17 @@ if type mise > /dev/null 2>&1; then
     eval "$(/opt/homebrew/bin/mise activate zsh)" # In your ~/.zshrc
     # NodeJS
     # -- Use node from mise as global
-    if ! which node; then
+    if ! which node >/dev/null 2>&1; then
         mise use --global node@latest
     fi
     # Python
     # install python from mise if node hasn't installed yet
-    if ! which python; then
+    if ! which python >/dev/null 2>&1; then
         mise use --global python@latest
     fi
     # go
     # install go from mise if node hasn't installed yet
-    if ! which go; then
+    if ! which go >/dev/null 2>&1; then
         mise use --global go@latest
     fi
 else
