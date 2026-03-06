@@ -1,3 +1,9 @@
+### zsh management ###
+# To activate the zsh autosuggestions
+if type mise > /dev/null 2>&1; then
+    source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
+
 ### Language management ###
 # Automatic Activation: With mise activate,
 # mise hooks into your shell prompt and automatically updates your environment
