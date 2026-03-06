@@ -23,7 +23,7 @@ export XDG_DATA_HOME="$HOME/.local/state"
 # default editor
 export EDITOR="vim"
 # rich editor
-#export VISUAL="zed --wait"
+export VISUAL="nvim"
 
 ### HISTORY ###
 # history file path
