@@ -1,0 +1,18 @@
+### Language management ###
+# If mise exists
+if type mise > /dev/null 2>&1; then
+    # Run to ensure you use the correct versions
+    eval "$(/opt/homebrew/bin/mise activate zsh)"
+    local miselist="$(mise ls --json | jq -r 'keys[]')"
+    # Install NodeJS
+    # -q: quiet, -x: --line-regexp, -F: fixed-strings
+    echo "$miselist" | grep -qxF node || mise install node@latest
+    # Install Python
+    echo "$miselist" | grep -qxF node || mise install python@latest
+    # Install go
+    echo "$miselist" | grep -qxF node || mise install go@latest
+    # Install terraform
+    echo "$miselist" | grep -qxF node || mise install terraform@latest
+else
+    echo "NOT found mise command. please install mise"
+fi
