@@ -17,6 +17,7 @@ This dotfile only supports Mac now.
 1. Check what changes that chezmoi will make to your home directory by running: `chezmoi diff`
 1. Apply changes: `chezmoi apply -v`
 1. Install the packages listed in ~/.Brewfile: `brew bundle --global`
+1. Install [laztvim](https://www.lazyvim.org/) manually: [LazyVim Starter](https://www.lazyvim.org/installation)
 
 ## How to manage dotfiles
 
