@@ -29,6 +29,6 @@ export VISUAL="nvim"
 # history file path
 export HISTFILE=~/.zsh_history
 # history size on memory
-export HISTSIZE=1000
+export HISTSIZE=10000
 # history size on file
 export SAVEHIST=100000
