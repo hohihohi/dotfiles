@@ -17,6 +17,9 @@ else
     echo "NOT found mise command. please install mise"
 fi
 
+
+#### zsh options ####
+# If you'd confirm the current zsh options, execute 'set -o'.
 ### History ###
 # Treat the '!' character specially during expansion.
 setopt bang_hist
