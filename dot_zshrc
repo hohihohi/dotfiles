@@ -45,7 +45,7 @@ zshaddhistory() {
 alias ..='cd ..'
 alias ll='eza -la --git' # Show hidden all files
 alias trec='eza --tree' # Show files and directories as tree
-alias ripgrep='rg --hidden --no--ignore' # ripgrep=rg
+alias ripgrep='rg --hidden --no-ignore' # ripgrep=rg
 
 
 ### MAC ###
