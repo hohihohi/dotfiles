@@ -20,6 +20,13 @@ fi
 
 #### zsh options ####
 # If you'd confirm the current zsh options, execute 'set -o'.
+
+### Glob ###
+# Sort file paths returned by a glob pattern in numerical order
+setopt numeric_glob_sort
+# Prevents errors when a wildcard (glob) pattern does not match any files
+setopt nonomatch
+
 ### History ###
 # Treat the '!' character specially during expansion.
 setopt bang_hist
