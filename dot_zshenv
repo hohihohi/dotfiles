@@ -32,3 +32,8 @@ export HISTFILE=~/.zsh_history
 export HISTSIZE=10000
 # history size on file
 export SAVEHIST=100000
+
+### PROPMT ###
+export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/config.toml"
+export STARSHIP_CACHE="$XDG_CACHE_HOME/starship"
+export PROMPT="${PROMPT}"$'\n'
