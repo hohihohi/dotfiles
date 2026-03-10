@@ -1,4 +1,6 @@
-### zsh management ###
+# 00. The initial minimal setup required
+
+### Activate or Initialize ###
 # To activate the zsh autosuggestions
 if type mise > /dev/null 2>&1; then
     source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
