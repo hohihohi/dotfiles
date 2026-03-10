@@ -17,7 +17,7 @@ export XDG_CACHE_HOME="$HOME/.cache"
 # XDG data file
 export XDG_DATA_HOME="$HOME/.local/share"
 # XDG state file
-export XDG_DATA_HOME="$HOME/.local/state"
+export XDG_STATE_HOME="$HOME/.local/state"
 
 ### EDITOR ###
 # default editor
