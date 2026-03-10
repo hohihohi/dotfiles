@@ -1,0 +1,13 @@
+#### Alias ####
+# https://github.com/rothgar/mastering-zsh/blob/master/docs/helpers/aliases.md
+### CORE ###
+alias ..='cd ..'
+alias ll='eza -la --git' # Show hidden all files
+alias trec='eza --tree' # Show files and directories as tree
+alias ripgrep='rg --hidden --no-ignore' # ripgrep=rg
+
+
+### MAC ###
+alias fopen='open ./' # Open current directory by finder
+alias ccp='pwd | pbcopy' # Copy current path
+alias sed='gsed'
