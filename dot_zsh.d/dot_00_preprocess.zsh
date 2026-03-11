@@ -1,10 +1,6 @@
 # 00. The initial minimal setup required
 
 ### Activate or Initialize ###
-# To activate the zsh autosuggestions
-if type mise > /dev/null 2>&1; then
-    source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-fi
 # Set up your shell to use Starship
 if type starship > /dev/null 2>&1; then
     eval "$(starship init zsh)"
