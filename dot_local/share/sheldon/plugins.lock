@@ -1,0 +1,21 @@
+version = "0.8.5"
+home = "/Users/hideaki_shiraishi"
+config_dir = "/Users/hideaki_shiraishi/.config/sheldon"
+data_dir = "/Users/hideaki_shiraishi/.local/share/sheldon"
+config_file = "/Users/hideaki_shiraishi/.config/sheldon/plugins.toml"
+
+[[plugins]]
+name = "zsh-autosuggestions"
+source_dir = "/Users/hideaki_shiraishi/.local/share/sheldon/repos/github.com/zsh-users/zsh-autosuggestions"
+files = ["/Users/hideaki_shiraishi/.local/share/sheldon/repos/github.com/zsh-users/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh"]
+apply = ["source"]
+
+[plugins.hooks]
+
+[templates]
+PATH = 'export PATH="{{ dir }}:$PATH"'
+path = 'path=( "{{ dir }}" $path )'
+fpath = 'fpath=( "{{ dir }}" $fpath )'
+source = """
+{{ hooks?.pre | nl }}{% for file in files %}source "{{ file }}"
+{% endfor %}{{ hooks?.post | nl }}"""
