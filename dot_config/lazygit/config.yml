@@ -31,7 +31,7 @@ customCommands:
             description: "exclusively affect documentation"
             value: "docs"
           - name: "build"
-            description: " affect build-related components such as build tools, dependencies, project version..."
+            description: "affect build-related components such as build tools, dependencies, project version..."
             value: "build"
           - name: "ops"
             description: "affect operational aspects like infrastructure (IaC), deployment scripts, CI/CD pipelines, backups, monitoring, or recovery procedures"
