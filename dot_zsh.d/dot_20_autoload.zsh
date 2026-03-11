@@ -21,4 +21,3 @@ autoload -Uz vcs_info
 # colors: colors can be applied in the prompt using special percent codes,
 # or in any shell output (including the prompt) by using the colors built-in function
 autoload -Uz colors
-#colors
