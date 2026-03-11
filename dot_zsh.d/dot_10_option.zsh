@@ -1,3 +1,4 @@
+# 10. The zsh option settings
 # If you'd confirm the current zsh options, execute 'set -o'.
 
 ### Glob ###
