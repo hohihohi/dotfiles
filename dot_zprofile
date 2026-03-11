@@ -1,5 +1,7 @@
+# Login shell order: zshenv -> zprofile -> zshrc -> zlogin
 ### Language management ###
-# If mise exists
+
+# Install programing languages from mise
 if type mise > /dev/null 2>&1; then
     # Run to ensure you use the correct versions
     eval "$(/opt/homebrew/bin/mise activate zsh)"
