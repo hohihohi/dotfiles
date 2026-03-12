@@ -23,3 +23,5 @@ github = "zsh-users/zsh-syntax-highlighting"
 [plugins.zsh-completions]
 github = "zsh-users/zsh-completions"
 
+[plugins.sheldon-completion]
+remote = "https://raw.githubusercontent.com/rossmacarthur/sheldon/refs/heads/trunk/completions/sheldon.zsh"
