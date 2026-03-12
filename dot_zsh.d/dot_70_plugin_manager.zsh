@@ -11,10 +11,17 @@ local sheldon_cache="$cache_dir/sheldon.zsh"
 local sheldon_toml="$XDG_CONFIG_HOME/sheldon/plugins.toml"
 # If there is no cache or old cache, sheldon only executes 'sheldon source' and save the new script as cache
 if [[ ! -r "$sheldon_cache" || "$sheldon_toml" -nt "$sheldon_cache" ]]; then
-  mkdir -p $cache_dir
-  sheldon source > $sheldon_cache
+  #mkdir -p $cache_dir
+  #sheldon source > $sheldon_cache
+  mkdir -p -- "$cache_dir"
+  local tmp="${sheldon_cache}.tmp.$$"
+  if sheldon source >| "$tmp" 2>/dev/null; then
+    mv -f -- "$tmp" "$sheldon_cache"
+  else
+    rm -f -- "$tmp"
+  fi
 fi
 source "$sheldon_cache"
 
 # Delete unnesessary variables
-unset cache_dir sheldon_cache sheldon_toml
+unset cache_dir sheldon_cache sheldon_toml tmp
