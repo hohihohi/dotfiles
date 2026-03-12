@@ -4,9 +4,6 @@
 # FPATH defines the list of directories the shell searches for definitions of autoloaded functions,
 # including command-line completion scripts
 fpath=("$HOME/.zsh.d/.50_function.zsh" $fpath)
-# act completions
-fpath=("$HOME/.zsh.d/completions/_act" $fpath)
-
 
 # autoload: Load built-in function on $FPATH automatically -> autoload -Uz <func>
 # -U: Load ignorely user defined alias

@@ -27,4 +27,4 @@ github = "zsh-users/zsh-completions"
 remote = "https://raw.githubusercontent.com/rossmacarthur/sheldon/refs/heads/trunk/completions/sheldon.zsh"
 
 [plugins.act-completion]
-local = "~/.zsh.d/completions/_act"
+remote = "https://raw.githubusercontent.com/hohihohi/dotfiles/refs/heads/main/dot_zsh.d/completions/_act"
