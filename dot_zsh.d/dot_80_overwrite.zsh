@@ -2,3 +2,5 @@
 
 # Call key-bind function which is defined on ~/.zsh.d/.60_keybind.zsh
 apply_keybindings
+# Apply zoxiade completions after compinit called
+init_zoxide
