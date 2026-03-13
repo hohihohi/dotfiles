@@ -37,3 +37,7 @@ export SAVEHIST=100000
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/config.toml"
 export STARSHIP_CACHE="$XDG_CACHE_HOME/starship"
 export PROMPT="${PROMPT}"$'\n'
+
+### OTHER ###
+# colorizing pager for man command
+export MANPAGER="bat -plman"
