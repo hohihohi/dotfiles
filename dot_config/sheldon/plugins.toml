@@ -45,3 +45,6 @@ apply = ["fpath"]
 [plugins.fd-completion]
 remote = "https://raw.githubusercontent.com/sharkdp/fd/refs/heads/master/contrib/completion/_fd"
 apply = ["fpath"]
+
+[plugins.gh-completion]
+remote = "https://raw.githubusercontent.com/hohihohi/dotfiles/refs/heads/main/dot_zsh.d/completions/_gh"
