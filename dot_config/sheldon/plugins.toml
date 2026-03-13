@@ -34,3 +34,6 @@ remote = "https://raw.githubusercontent.com/hohihohi/dotfiles/refs/heads/main/do
 
 [plugins.docker-completion]
 remote = "https://raw.githubusercontent.com/hohihohi/dotfiles/refs/heads/main/dot_zsh.d/completions/_docker"
+
+[plugins.docker-compose-completion]
+remote = "https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/refs/heads/master/plugins/docker-compose/_docker-compose"
