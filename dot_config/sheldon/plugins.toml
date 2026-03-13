@@ -28,3 +28,6 @@ remote = "https://raw.githubusercontent.com/rossmacarthur/sheldon/refs/heads/tru
 
 [plugins.act-completion]
 remote = "https://raw.githubusercontent.com/hohihohi/dotfiles/refs/heads/main/dot_zsh.d/completions/_act"
+
+[plugins.chezmoi-completion]
+remote = "https://raw.githubusercontent.com/hohihohi/dotfiles/refs/heads/main/dot_zsh.d/completions/_chezmoi"
