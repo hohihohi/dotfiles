@@ -77,3 +77,7 @@ apply = ["defer"]
 [plugins.gitleaks-completion]
 remote = "https://raw.githubusercontent.com/hohihohi/dotfiles/refs/heads/main/dot_zsh.d/completions/_gitleaks"
 apply = ["defer"]
+
+[plugins.gopass-completion]
+remote = "https://raw.githubusercontent.com/gopasspw/gopass/refs/heads/master/zsh.completion"
+apply = ["defer"]
