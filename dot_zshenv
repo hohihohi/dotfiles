@@ -40,4 +40,5 @@ export PROMPT="${PROMPT}"$'\n'
 
 ### OTHER ###
 # colorizing pager for man command
-export MANPAGER="bat -plman"
+# https://github.com/sharkdp/bat/issues/1433#issuecomment-3708644390
+export MANPAGER="sh -c 'col -bx | bat -l man -p'" man ls
