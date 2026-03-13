@@ -85,3 +85,7 @@ apply = ["defer"]
 [plugins.mise-completion]
 remote = "https://raw.githubusercontent.com/jdx/mise/refs/heads/main/completions/_mise"
 apply = ["defer"]
+
+[plugins.rg-completion]
+remote = "https://raw.githubusercontent.com/hohihohi/dotfiles/refs/heads/main/dot_zsh.d/completions/_rg"
+apply = ["defer", "fpath"]
