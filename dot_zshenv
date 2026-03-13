@@ -42,3 +42,7 @@ export PROMPT="${PROMPT}"$'\n'
 # colorizing pager for man command
 # https://github.com/sharkdp/bat/issues/1433#issuecomment-3708644390
 export MANPAGER="sh -c 'col -bx | bat -l man -p'" man ls
+# Options for path completion (e.g. vim **<TAB>): show dir and file which contains dot file and dir
+export FZF_COMPLETION_PATH_OPTS='--walker file,dir,follow,hidden'
+# Options for directory completion (e.g. cd **<TAB>): show only dir which contains dot dir
+export FZF_COMPLETION_DIR_OPTS='--walker dir,follow,hidden'
