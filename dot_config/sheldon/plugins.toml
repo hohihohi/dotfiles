@@ -41,3 +41,7 @@ remote = "https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/refs/heads/master/pl
 [plugins.eza-completion]
 remote = "https://raw.githubusercontent.com/eza-community/eza/refs/heads/main/completions/zsh/_eza"
 apply = ["fpath"]
+
+[plugins.fd-completion]
+remote = "https://raw.githubusercontent.com/sharkdp/fd/refs/heads/master/contrib/completion/_fd"
+apply = ["fpath"]
