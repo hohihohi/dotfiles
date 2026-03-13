@@ -81,3 +81,7 @@ apply = ["defer"]
 [plugins.gopass-completion]
 remote = "https://raw.githubusercontent.com/gopasspw/gopass/refs/heads/master/zsh.completion"
 apply = ["defer"]
+
+[plugins.mise-completion]
+remote = "https://raw.githubusercontent.com/jdx/mise/refs/heads/main/completions/_mise"
+apply = ["defer"]
