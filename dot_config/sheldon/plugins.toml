@@ -31,3 +31,6 @@ remote = "https://raw.githubusercontent.com/hohihohi/dotfiles/refs/heads/main/do
 
 [plugins.chezmoi-completion]
 remote = "https://raw.githubusercontent.com/hohihohi/dotfiles/refs/heads/main/dot_zsh.d/completions/_chezmoi"
+
+[plugins.docker-completion]
+remote = "https://raw.githubusercontent.com/hohihohi/dotfiles/refs/heads/main/dot_zsh.d/completions/_docker"
