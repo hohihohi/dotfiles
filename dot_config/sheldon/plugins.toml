@@ -56,7 +56,7 @@ apply = ["defer"]
 
 [plugins.eza-completion]
 remote = "https://raw.githubusercontent.com/eza-community/eza/refs/heads/main/completions/zsh/_eza"
-apply = ["fpath"]
+apply = ["defer","fpath"]
 
 [plugins.fd-completion]
 remote = "https://raw.githubusercontent.com/sharkdp/fd/refs/heads/master/contrib/completion/_fd"
