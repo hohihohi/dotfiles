@@ -7,6 +7,8 @@ alias lr='fzf --preview "bat --color=always --style=numbers --line-range=:500 {}
 alias trec='eza --tree' # Show files and directories as tree
 alias ripgrep='rg --hidden --no-ignore' # ripgrep=rg
 
+### GIT ###
+alias gd='git diff --name-only --relative --diff-filter=d -z | xargs -0 bat --diff' # Show rich git diff
 
 ### MAC ###
 alias fopen='open ./' # Open current directory by finder
