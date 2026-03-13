@@ -14,29 +14,45 @@ shell = "zsh"
 
 [plugins]
 
+# Important: the zsh-defer plugin definition should be placed before any plugins that will use the defer template.
+# Sheldon always processes plugins in the order they are defined in the config fil
+[plugins.zsh-defer]
+github = "romkatv/zsh-defer"
+# Then add a template that calls zsh-defer source instead of just source.
+[templates]
+defer = "{{ hooks?.pre | nl }}{% for file in files %}zsh-defer source \"{{ file }}\"\n{% endfor %}{{ hooks?.post | nl }}"
+
 [plugins.zsh-autosuggestions]
 github = "zsh-users/zsh-autosuggestions"
+apply = ["defer"]
 
 [plugins.zsh-syntax-highlighting]
 github = "zsh-users/zsh-syntax-highlighting"
+apply = ["defer"]
 
 [plugins.zsh-completions]
 github = "zsh-users/zsh-completions"
+apply = ["defer"]
 
 [plugins.sheldon-completion]
 remote = "https://raw.githubusercontent.com/rossmacarthur/sheldon/refs/heads/trunk/completions/sheldon.zsh"
+apply = ["defer"]
 
 [plugins.act-completion]
 remote = "https://raw.githubusercontent.com/hohihohi/dotfiles/refs/heads/main/dot_zsh.d/completions/_act"
+apply = ["defer"]
 
 [plugins.chezmoi-completion]
 remote = "https://raw.githubusercontent.com/hohihohi/dotfiles/refs/heads/main/dot_zsh.d/completions/_chezmoi"
+apply = ["defer"]
 
 [plugins.docker-completion]
 remote = "https://raw.githubusercontent.com/hohihohi/dotfiles/refs/heads/main/dot_zsh.d/completions/_docker"
+apply = ["defer"]
 
 [plugins.docker-compose-completion]
 remote = "https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/refs/heads/master/plugins/docker-compose/_docker-compose"
+apply = ["defer"]
 
 [plugins.eza-completion]
 remote = "https://raw.githubusercontent.com/eza-community/eza/refs/heads/main/completions/zsh/_eza"
@@ -44,7 +60,8 @@ apply = ["fpath"]
 
 [plugins.fd-completion]
 remote = "https://raw.githubusercontent.com/sharkdp/fd/refs/heads/master/contrib/completion/_fd"
-apply = ["fpath"]
+apply = ["defer","fpath"]
 
 [plugins.gh-completion]
 remote = "https://raw.githubusercontent.com/hohihohi/dotfiles/refs/heads/main/dot_zsh.d/completions/_gh"
+apply = ["defer"]
