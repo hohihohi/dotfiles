@@ -65,3 +65,7 @@ apply = ["defer","fpath"]
 [plugins.gh-completion]
 remote = "https://raw.githubusercontent.com/hohihohi/dotfiles/refs/heads/main/dot_zsh.d/completions/_gh"
 apply = ["defer"]
+
+[plugins.ghq-completion]
+remote = "https://raw.githubusercontent.com/x-motemen/ghq/refs/heads/master/misc/zsh/_ghq"
+apply = ["defer","fpath"]
