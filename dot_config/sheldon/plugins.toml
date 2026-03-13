@@ -37,3 +37,7 @@ remote = "https://raw.githubusercontent.com/hohihohi/dotfiles/refs/heads/main/do
 
 [plugins.docker-compose-completion]
 remote = "https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/refs/heads/master/plugins/docker-compose/_docker-compose"
+
+[plugins.eza-completion]
+remote = "https://raw.githubusercontent.com/eza-community/eza/refs/heads/main/completions/zsh/_eza"
+apply = ["fpath"]
