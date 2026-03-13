@@ -3,6 +3,7 @@
 ### CORE ###
 alias ..='cd ..'
 alias ll='eza -la --git' # Show hidden all files
+alias lr='fzf --preview "bat --color=always --style=numbers --line-range=:500 {}"' # Read all files on pwd
 alias trec='eza --tree' # Show files and directories as tree
 alias ripgrep='rg --hidden --no-ignore' # ripgrep=rg
 
