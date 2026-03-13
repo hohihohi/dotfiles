@@ -73,3 +73,7 @@ apply = ["defer","fpath"]
 [plugins.gibo-completion]
 remote = "https://raw.githubusercontent.com/hohihohi/dotfiles/refs/heads/main/dot_zsh.d/completions/_gibo"
 apply = ["defer"]
+
+[plugins.gitleaks-completion]
+remote = "https://raw.githubusercontent.com/hohihohi/dotfiles/refs/heads/main/dot_zsh.d/completions/_gitleaks"
+apply = ["defer"]
