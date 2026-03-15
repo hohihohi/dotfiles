@@ -50,8 +50,10 @@ setopt complete_in_word
 setopt no_clobber
 
 ### AUTOMATION ###
-# When cd is executed, it is pushed to the directory stack
+# When cd is executed, it is pushed to the directory stack automatically
 setopt auto_pushd
+# Do not record a directory stack that was just recorded again.
+setopt pushd_ignore_dups
 # When there are multiple candidates for completion, list them
 setopt auto_list
 # Automatically completes parenthesis correspondence, etc
@@ -74,6 +76,8 @@ setopt notify
 setopt magic_equal_subst
 # Make variable references in PROMPT variables expandable
 setopt prompt_subst
+# Disable flow control
+setopt no_flow_control
 # Modify comand spell automatically: Conflict AI Agent
 unsetopt correct
 # Modify all command line spells automatically: Conflict AI Agent
@@ -86,3 +90,5 @@ setopt print_eight_bit
 setopt list_types
 # Make list display compact
 setopt list_packed
+# Display the status if the completion status is not 0
+setopt print_exit_value
