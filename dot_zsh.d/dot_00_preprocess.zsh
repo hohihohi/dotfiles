@@ -5,6 +5,10 @@
 if type starship > /dev/null 2>&1; then
     eval "$(starship init zsh)"
 fi
+# Set up brew
+if type brew > /dev/null 2>&1; then
+    eval "$(brew shellenv)"
+fi
 
 ### Language management ###
 # Automatic Activation: With mise activate,
