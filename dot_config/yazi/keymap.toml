@@ -1,0 +1,25 @@
+# Default: https://github.com/sxyazi/yazi/blob/shipped/yazi-config/preset/keymap-default.toml
+# Doc: https://yazi-rs.github.io/docs/configuration/keymap
+# prepend_keymap: Prepend inserts before the default keybindings
+# append_keymap: Append inserts after the default keybindings
+# 'prepend_keymap' always has a higher priority than default, and 'append_keymap' always has a lower priority than default
+
+# Operation
+# remove: Trash selected files and directories
+# default keybind: 'd' equals remove(trash selected files)
+# IMO, default keybind is dangerous! If I enter d-button by mistake, it will be deleted immediately...
+# So I'd like to prevent it from inputting double 'd' command
+[[mgr.prepend_keymap]]
+on   = [ "d", "d" ]
+run  = "remove"
+desc = "(CustomeCommand) trash selected files and directories"
+
+
+# Help
+# default keybind: '~' and 'F1' equal 'Open help' and '?' equals 'Find previous file'
+# IMO, lazygit keybind,s '?' equals 'Open help' and confuse it mixing
+# So I'd like to prevent from confusing
+[[mgr.prepend_keymap]]
+on   = [ "?" ]
+run  = "help"
+desc = "(CustomeCommand) open help"
