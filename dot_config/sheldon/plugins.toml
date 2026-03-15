@@ -97,3 +97,7 @@ apply = ["defer", "fpath"]
 [plugins.yq-completion]
 remote = "https://raw.githubusercontent.com/hohihohi/dotfiles/refs/heads/main/dot_zsh.d/completions/_yq"
 apply = ["defer"]
+
+[plugins.zellij-completion]
+remote = "https://raw.githubusercontent.com/hohihohi/dotfiles/refs/heads/main/dot_zsh.d/completions/_zellij"
+apply = ["defer"]
