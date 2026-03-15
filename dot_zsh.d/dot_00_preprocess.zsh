@@ -9,6 +9,10 @@ fi
 if type brew > /dev/null 2>&1; then
     eval "$(brew shellenv)"
 fi
+# Set up zellij
+if type brew > /dev/null 2>&1; then
+    echo 'eval "$(zellij setup --generate-auto-start zsh)"'
+fi
 
 ### Language management ###
 # Automatic Activation: With mise activate,
