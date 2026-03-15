@@ -4,3 +4,5 @@
 apply_keybindings
 # Apply zoxiade completions after compinit called
 init_zoxide
+# Overwrite PROMPT env val to use line break because starship plugin overwrite this env val on zshenv
+export PROMPT="${PROMPT}"$'\n'
