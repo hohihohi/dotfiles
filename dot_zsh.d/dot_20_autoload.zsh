@@ -1,5 +1,7 @@
 # 20. Define FPATH and autoload settings(only set autoload but execute loading)
 
+# Adding `typeset -U` to the array removes duplicates. Ensure that fpath does not allow duplicates.
+typeset -U fpath
 # FPATH (or its array equivalent, fpath) is a special shell parameter
 # FPATH defines the list of directories the shell searches for definitions of autoloaded functions,
 # including command-line completion scripts
