@@ -1,11 +1,12 @@
 # 30. Define zstyle
+
 # zstyle handles the obvious style control for the completion system,
 # but it seems to cover more than just that.
 # eg: the vcs_info module relies on it for display of git status in your prompt.
 
 # Define the zstyles which are refered when initialization.
 # So they should be defined before compinit!
-apply_zstyles_base() {
+function apply_zstyles_base() {
   ### Caching / performance
   # Enable completion caching to speed up repeated completion lookups
   zstyle ':completion:*' use-cache true
@@ -34,8 +35,10 @@ apply_zstyles_base
 
 # On the other hand, define the zstyles which are often overwriten by plugins
 # So they should be applied after all plugins are called: ~/.zsh.d/.80_overwrite.zsh
-apply_zstyles_after_plugins() {
+function apply_zstyles_after_plugins() {
   ### UI / presentation
+  # Enable interactive menu selection for completion results
+  zstyle ':completion:*' menu select
   # Show descriptive text for option completions
   zstyle ':completion:*:options' description 'yes'
   # Customize the format of completion description headers
