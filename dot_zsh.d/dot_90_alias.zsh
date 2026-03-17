@@ -1,5 +1,6 @@
 #### Alias ####
 # https://github.com/rothgar/mastering-zsh/blob/master/docs/helpers/aliases.md
+
 ### CORE ###
 alias ..='cd ..'
 alias ll='eza -la --git' # Show hidden all files

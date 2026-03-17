@@ -26,7 +26,7 @@ function cd_ghq_list() {
 zle -N cd_ghq_list
 
 ### key-bind ###
-apply_keybindings() {
+function apply_keybindings() {
   ### MOVE ###
   ## Move to the beginning of the line
   bindkey '^A' beginning-of-line
