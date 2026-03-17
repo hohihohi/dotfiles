@@ -3,8 +3,6 @@
 # FPATH (or its array equivalent, fpath) is a special shell parameter
 # FPATH defines the list of directories the shell searches for definitions of autoloaded functions,
 # including command-line completion scripts
-fpath=("$HOME/.zsh.d/.50_function.zsh" $fpath)
-fpath=("$HOME/.zsh.d/.30_style.zsh" $fpath)
 fpath=("$HOME/.zsh.d/completions" $fpath)
 
 # autoload: Load built-in function on $FPATH automatically -> autoload -Uz <func>
