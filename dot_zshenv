@@ -36,7 +36,9 @@ export SAVEHIST=100000
 ### PROPMT ###
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/config.toml"
 export STARSHIP_CACHE="$XDG_CACHE_HOME/starship"
-export PROMPT="${PROMPT}"$'\n'
+# WRAN: PROMPT env val is overwritten starship plug-in.
+# If I'd like to apply line-break into prompt, I should specify it after plug-in applied
+# export PROMPT="${PROMPT}"$'\n'
 
 ### OTHER ###
 # colorizing pager for man command
