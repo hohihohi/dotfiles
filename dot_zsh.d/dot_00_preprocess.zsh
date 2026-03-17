@@ -10,8 +10,8 @@ if type brew > /dev/null 2>&1; then
     eval "$(brew shellenv)"
 fi
 # Set up zellij
-if type brew > /dev/null 2>&1; then
-    echo 'eval "$(zellij setup --generate-auto-start zsh)"'
+if type zellij > /dev/null 2>&1; then
+    eval "$(zellij setup --generate-auto-start zsh)"
 fi
 
 ### Language management ###
