@@ -15,3 +15,7 @@ alias gd='git diff --name-only --relative --diff-filter=d -z | xargs -0 bat --di
 alias fopen='open ./' # Open current directory by finder
 alias ccp='pwd | pbcopy' # Copy current path
 alias sed='gsed'
+
+### zellij ###
+alias zel-a='zellij attach -l default -c' # specify name and start its session even if non-exist
+alias zel-rp='zellij action rename-pane' # specify name and rename pane
