@@ -1,0 +1,56 @@
+layout {
+  // There is a special default_tab_template node that can be used just like a regular tab_template node
+  // but that would `apply to all tabs in the template` as well as all new tabs opened in the session.
+  default_tab_template {
+    // the default zellij tab-bar and  status-bar setting
+    pane size=1 borderless=true {
+      plugin location="zellij:tab-bar"
+    }
+    children
+    pane size=2 borderless=true {
+      plugin location="zellij:status-bar"
+    }
+  }
+  // ----- Main -----
+  tab name="Developer" focus=true {
+    pane split_direction="vertical" {
+      pane {
+        name "Editor"
+        command "nvim"
+        args "."
+      }
+      pane split_direction="horizontal" {
+        pane {
+          name "Finder"
+          command "yazi"
+        }
+        pane {
+          name "Git"
+          command "lazygit"
+        }
+      }
+    }
+  }
+  // ----- Agent -----
+  tab name="AgentsTeam" max_panes=4 {
+    pane split_direction="vertical" {
+      pane split_direction="horizontal" {
+        pane
+        pane
+      }
+      pane split_direction="horizontal" {
+        pane
+        pane
+      }
+    }
+  }
+  // ----- Monitor -----
+  tab name="Monitor" max_panes=2 {
+    pane size="50%" split_direction="vertical" {
+      name "Process"
+    }
+    pane size="50%" {
+      name "Token"
+    }
+  }
+}
