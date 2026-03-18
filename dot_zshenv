@@ -48,3 +48,5 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'" man ls
 export FZF_COMPLETION_PATH_OPTS='--walker file,dir,follow,hidden'
 # Options for directory completion (e.g. cd **<TAB>): show only dir which contains dot dir
 export FZF_COMPLETION_DIR_OPTS='--walker dir,follow,hidden'
+# zellij config path
+export ZELLIJ_CONFIG_DIR="$XDG_CONFIG_HOME/zellij"
