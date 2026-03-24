@@ -10,9 +10,18 @@ if type brew > /dev/null 2>&1; then
     eval "$(brew shellenv)"
 fi
 # Set up zellij
-if type zellij > /dev/null 2>&1; then
-    eval "$(zellij setup --generate-auto-start zsh)"
+# Automatic attach the session
+local ZJ_SESSIONS=$(zellij list-sessions --short --no-formatting)
+local ZJ_SESSION_NUM=$(echo "${ZJ_SESSIONS}" | wc -l)
+local ZJ_DEFAULT_SESSION_NAME="default"
+if [ "${ZJ_SESSION_NUM}" -eq 1 ]; then
+    zellij attach "${ZJ_SESSIONS}"
+elif ["${ZJ_SESSION_NUM}"-gt 1]; then
+    echo "There are multiple zellij sessions. Please check the sessions and attach."
+else
+   zellij attach --create "${ZJ_DEFAULT_SESSION_NAME}"
 fi
+
 
 ### Language management ###
 # Automatic Activation: With mise activate,
