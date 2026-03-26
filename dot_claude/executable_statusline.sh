@@ -1,4 +1,5 @@
 #!/bin/bash
+# Doc: https://code.claude.com/docs/ja/statusline
 # load standard input as JSON
 input=$(cat)
 
