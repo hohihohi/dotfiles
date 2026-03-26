@@ -10,18 +10,25 @@ if type brew > /dev/null 2>&1; then
     eval "$(brew shellenv)"
 fi
 # Set up zellij
-# Automatic attach the session
-local ZJ_SESSIONS=$(zellij list-sessions --short --no-formatting)
-local ZJ_SESSION_NUM=$(echo "${ZJ_SESSIONS}" | wc -l)
-local ZJ_DEFAULT_SESSION_NAME="default"
-if [ "${ZJ_SESSION_NUM}" -eq 1 ]; then
-    zellij attach "${ZJ_SESSIONS}"
-elif ["${ZJ_SESSION_NUM}"-gt 1]; then
-    echo "There are multiple zellij sessions. Please check the sessions and attach."
-else
-   zellij attach --create "${ZJ_DEFAULT_SESSION_NAME}"
+# Test if you're already in zellij on this session
+if [[ -z "$ZELLIJ_SESSION_NAME" ]]; then
+    # Check whether the sessions are exists or not
+    if zellij list-sessions --short --no-formatting > /dev/null 2>&1; then
+        # If single session is exist, Attach the session automatically
+        local ZJ_SESSION_NUM=$(zellij list-sessions --short --no-formatting | wc -l | xargs)
+        if [ "${ZJ_SESSION_NUM}" = 1 ]; then
+            local ZJ_SESSION=$(zellij list-sessions --short --no-formatting)
+            zellij attach "${ZJ_SESSION}"
+        # If multiple sessions are exist, user attach the session manually
+        else
+            echo "There are multiple zellij sessions. Please check the sessions and attach."
+        fi
+    else
+        # If no session exists, attach the default session automatically
+        local ZJ_DEFAULT_SESSION_NAME="default"
+        zellij attach --create "${ZJ_DEFAULT_SESSION_NAME}"
+    fi
 fi
-
 
 ### Language management ###
 # Automatic Activation: With mise activate,
