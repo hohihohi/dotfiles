@@ -81,8 +81,6 @@ cask "obsidian"
 cask "raycast"
 cask "rectangle"
 cask "slack"
-cask "warp"
-cask "zed"
 cask "zoom"
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
