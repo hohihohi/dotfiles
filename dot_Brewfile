@@ -84,6 +84,7 @@ cask "obsidian"
 cask "raycast"
 cask "rectangle"
 cask "slack"
+cask "visual-studio-code"
 cask "zoom"
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
@@ -91,5 +92,10 @@ mas "Keynote", id: 409183694
 mas "Kindle", id: 302584613
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+vscode "bierner.markdown-mermaid"
+vscode "davidanson.vscode-markdownlint"
+vscode "github.copilot-chat"
+vscode "martinpicard.vscode-openapi"
+vscode "redhat.vscode-yaml"
 go "cmd/go"
 go "cmd/gofmt"
